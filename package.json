@@ -1,0 +1,77 @@
+{
+  "name": "incrementjson",
+  "version": "1.0.4",
+  "description": "An extremely tiny module for incrementing values stored in a JSON file, utilizing CommonJS modules for Node compatibility",
+  "main": "./lib/inc.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "test": "jest --detectOpenHandles --coverage",
+    "test:prod": "cross-env BABEL_ENV=production npm run test",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run test && npm run build"
+  },
+  "author": "Abourass <abourassa@assetval.com>",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "shared-node-browser": true,
+      "es6": true,
+      "mongo": true,
+      "jquery": true,
+      "jest": true
+    },
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ],
+      "consistent-return": 0,
+      "linebreak-style": 0,
+      "eqeqeq": 0,
+      "func-names": 0,
+      "import/newline-after-import": 0,
+      "max-len": 0,
+      "no-console": 0,
+      "no-lonely-if": 0,
+      "no-new-object": [
+        "error"
+      ],
+      "no-param-reassign": 0,
+      "no-plusplus": 0,
+      "no-restricted-properties": 0,
+      "no-shadow": 0,
+      "no-underscore-dangle": 0,
+      "no-unused-vars": 0,
+      "no-void": 0,
+      "object-curly-spacing": 0,
+      "object-shorthand": [
+        "error",
+        "consistent"
+      ],
+      "prefer-destructuring": 0,
+      "space-before-blocks": 0,
+      "space-before-function-paren": 0
+    }
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-preset-minify": "^0.5.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "regenerator-runtime": "^0.13.1",
+    "rimraf": "^2.6.2"
+  }
+}
