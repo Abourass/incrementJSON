@@ -1,7 +1,7 @@
 const incPropSrc = require('../src/inc');
 const subPropSrc = require('../src/sub');
-const incPropLib = require('../src/inc');
-const subPropLib = require('../src/sub');
+const incPropLib = require('../lib/inc');
+const subPropLib = require('../lib/sub');
 
 test('increment scores value by 5', () => {
   expect.assertions(1);
