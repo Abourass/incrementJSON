@@ -1,40 +1,40 @@
 # incrementJSON
 [![Build Status](https://travis-ci.org/Abourass/incrementJSON.svg?branch=master)](https://travis-ci.org/Abourass/incrementJSON)
 
-**A very small (1.9kB) library for incrementing and subtracting values held in JSON files** ✨
+**A very small (1.9kB *before gzip!*) library for incrementing and subtracting values held in JSON files** ✨
 
 This is just a super simple async library for incrementing / subtracting values held in JSON files
 
 # Installation
 NPM: 
-  `npm i incrementJSON --save`
+  `npm i incrementjson --save`
 
 Yarn: 
-  `yarn add incrementJSON -save`
+  `yarn add incrementjson -save`
 
 Then just require it as per usual:
 
-`const incrementJSON = require('incrementJSON');`
+`const incJS = require('incrementjson');`
 
 # Usage
 To increment
 
-`incProp('filePath', 'property', numberToIncrementBy);`
+`incJS.incProp('filePath', 'property', numberToIncrementBy);`
 
 To subtract
 
-`subProp('filePath', 'property', numberToSubtractBy);`
+`incJS.subProp('filePath', 'property', numberToSubtractBy);`
 
 Both functions return the new value for you. 
 
 # Examples
 Increment Example
 
-`console.log(incProp('./test/JSON/test.json', 'score', 5));`
+`console.log(incJS.incProp('./test/JSON/test.json', 'score', 5));`
 
 Subtraction Example
 
-`console.log(subProp('./test/JSON/test.json', 'score', 5));`
+`console.log(incJS.subProp('./test/JSON/test.json', 'score', 5));`
 
 # License
 
