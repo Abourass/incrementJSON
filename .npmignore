@@ -25,3 +25,4 @@ CHANGELOG.md
 .babelrc
 .gitignore
 jest.config.js
+.browserlistrc
