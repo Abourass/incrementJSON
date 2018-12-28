@@ -1,4 +1,5 @@
 # incrementJSON
+[![Build Status](https://travis-ci.org/Abourass/incrementJSON.svg?branch=master)](https://travis-ci.org/Abourass/incrementJSON)
 
 **A very small (1.9kB) library for incrementing and subtracting values held in JSON files** ✨
 
