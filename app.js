@@ -1,6 +1,4 @@
-const regeneratorRuntime = require('regenerator-runtime');
-const incProp = require('./lib/inc');
-const subProp = require('./lib/sub');
+const { incProp, subProp } = require('./lib/functions');
 
 module.exports = {
   incProp,
