@@ -33,6 +33,7 @@ jspm_packages
 # npm package lock
 package-lock.json
 yarn.lock
-
+./coverage 
+coverage
 others
 .DS_Store
