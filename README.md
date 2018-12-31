@@ -30,15 +30,11 @@ Both functions return the new value for you.
 # Examples
 Increment Example
 
-  `incJS.incProp('./test/JSON/test.json', 'score', 5).then(function(result) { 
-    console.log(result);
-  }) `
+  `incJS.incProp('test.json', 'score', 5).then(function(result) {console.log(result);})`
 
 Subtraction Example
 
-`incJS.subProp('./test/JSON/test.json', 'score', 5).then(function(result) { 
-    console.log(result);
-  }) `
+`incJS.subProp('test.json', 'score', 5).then(function(result) {console.log(result);})`
 
 # License
 
