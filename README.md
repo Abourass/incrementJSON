@@ -14,27 +14,27 @@ Yarn:
 
 Then just require it as per usual:
 
-`const incJS = require('incrementjson');`
+`const { incProp, subProp } = require('incrementjson');`
 
 # Usage
 To increment
 
-`incJS.incProp('filePath', 'property', numberToIncrementBy);`
+`incProp('filePath', 'property', numberToIncrementBy);`
 
 To subtract
 
-`incJS.subProp('filePath', 'property', numberToSubtractBy);`
+`subProp('filePath', 'property', numberToSubtractBy);`
 
 Both functions return the new value for you. 
 
 # Examples
 Increment Example
 
-  `incJS.incProp('test.json', 'score', 5).then(function(result) {console.log(result);})`
+  `incProp('test.json', 'score', 5).then(result => {console.log(result);})`
 
 Subtraction Example
 
-`incJS.subProp('test.json', 'score', 5).then(function(result) {console.log(result);})`
+  `subProp('test.json', 'score', 5).then(result => { {console.log(result);})`
 
 # License
 
