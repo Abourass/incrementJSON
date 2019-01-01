@@ -14,27 +14,46 @@ Yarn:
 
 Then just require it as per usual:
 
-`const { incProp, subProp } = require('incrementjson');`
+```javascript
+const { incProp, subProp } = require('incrementjson');
+```
 
 # Usage
 To increment
 
-`incProp('filePath', 'property', numberToIncrementBy);`
+```javascript
+incProp('filePath', 'property', numberToIncrementBy);
+```
+
+* `incProp` (short for incrementProperty) invokes the increment function. 
+* `'filePath'` is a string to the json file you want to increment a value in. 
+* `'property'` is the JSON property whose value you want to increment (ex. 'score', 'employeeID')
+* `numberToIncrementBy` is the number you want to increment by
 
 To subtract
 
-`subProp('filePath', 'property', numberToSubtractBy);`
+```javascript
+subProp('filePath', 'property', numberToSubtractBy);
+```
+* `incProp` (short for incrementProperty) invokes the increment function. 
+* `'filePath'` is a string to the json file you want to increment a value in. 
+* `'property'` is the JSON property whose value you want to increment (ex. 'score', 'employeeID')
+* `numberToIncrementBy` is the number you want to increment by
 
-Both functions return the new value for you. 
+Both functions return the new value for you as the result of a promise. This means you **have to use** `.then(result=> {};`
 
 # Examples
 Increment Example
 
-  `incProp('test.json', 'score', 5).then(result => {console.log(result);})`
+```javascript
+incProp('test.json', 'score', 5).then(result => {console.log(result);})
+```
 
 Subtraction Example
 
-  `subProp('test.json', 'score', 5).then(result => { {console.log(result);})`
+```javascript
+subProp('test.json', 'score', 5).then(result => { {console.log(result);})
+```
 
 # License
 
